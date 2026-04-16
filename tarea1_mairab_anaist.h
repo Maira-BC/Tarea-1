@@ -5,7 +5,7 @@
 using namespace std;
 
 class Ejercicio {
--protected:
+protected:
     int codigo;
     string nombre;
     string tipo;
@@ -27,7 +27,7 @@ public:
 class Cardio : public Ejercicio {
 public: 
     Cardio(int codigo, string nombre, string intensidad, int tiempo, string descripcion, int semana);
-    void mostrar;
+    void mostrar();
 };
 
 class Fuerza : public Ejercicio {
