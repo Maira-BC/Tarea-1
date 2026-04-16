@@ -103,6 +103,7 @@ int main() {
                 if(listaEjercicios[i]->getCodigo() == codigoEliminar) {
                     listaEjercicios.erase(listaEjercicios.begin() + i);
                     cout << "Ejercicio eliminado.\n";
+                    eliminado = true;
                     break;
                 }
             }
@@ -121,6 +122,7 @@ int main() {
             for(int i = 0; i < listaEjercicios.size(); i++) {
                 if(listaEjercicios[i]->getIntensidad() == intensidadBuscar) {
                     listaEjercicios[i]->mostrar();
+                    encontrado = true;
                 }
             }
 
